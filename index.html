@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Hello Bulma!</title>
+		<link rel="stylesheet" 
+        href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.0/css/bulma.min.css">
+		<script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+        <!-- <link rel="stylesheet" href="styles/debug.css"> -->
+		<style>
+
+.center {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.is-paddingless-horizontal { padding-left: 0; padding-right: 0; }
+
+.grid {
+	display: grid;
+	grid-template-columns:
+		[xl-start] 1fr 1.5rem [md-start] minmax(0, 624px) [md-end] 1.5rem 1fr [xl-end];
+}
+
+.grid *  { grid-column: md; }
+.grid-xl { grid-column: xl; }
+
+@media (max-width: 672px) {
+	:root {
+		font-size: 90%;
+	}
+}
+
+		</style>
+	</head>
+	<body>
+
+		<!-- .section -->
+		<section class="section is-paddingless-horizontal">
+			<div class="container grid">
+				<nav class="breadcrumb" aria-label="breadcrumbs">
+					<ul>
+						<li><a href="#">Home</a></li>
+						<li class="is-active"><a href="#" aria-current="page">How to build a blog quickly </a></li>
+					</ul>
+				</nav>
+			</div>
+		</section>
+		<!-- /.section -->
+		
+		<!-- .section -->
+		<section class="section is-paddingless-horizontal" style="padding-top: 0;">
+			<div class="container grid" style="max-width: 1024px;">
+
+				<!-- .media -->
+				<article class="media center">
+					<figure class="media-left">
+						<span class="image is-64x64">
+							<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANoAAADoCAMAAAC+cQpPAAAAe1BMVEX///8AAAB+fn7p6ek8PDxQUFCrq6uZmZnHx8fR0dHU1NTDw8PNzc3BwcHJycnS0tLx8fHg4ODi4uL4+Pi1tbXZ2dmjo6OdnZ2Li4tfX19sbGw5OTkkJCRlZWUeHh56enqSkpJDQ0NYWFgVFRUiIiIxMTGFhYULCwtKSkoYMHAVAAAD30lEQVR4nO3da3OiMBSHcdOq9dYWpGpRW0V7+/6fcEXWcguJMRnOCf0/7zazs3N+U5aqQOz1EEIIIYQQQgjpW6zWm+NxG7+OqCdx3Opb5O3m1OO4aygqrSPqkdwU/VRlp8bUU7noXgI79UI9l32BXNYF27aJJhbUo1m2a5QJQT2bXQuFTLxST2fVQEUTAfV4FoVKmdhTz2fRq5r2TT2fRR9qmvD3FVekkXn8u22io/l7jpzqaGvqCW/uRUd7o57w5h67+1Ob6Wh31BPeXMP7mbwl9YS3p6N5/IZ0raFRz2fRSC3z9yxy6qikef1mVPmb7UA9nV0bBe2eeji7FOd/j8/8WY2vI70+h2Q1/HeLqedykfTl1hf1VG4K6h/+dOdyzahfgq2o53FauE8y1vuuOz+xvCAM7zty9QkhLkWTl+Xq4ZqWw5lHryXD/WfzK0dpnpw1H/t6iqQH6rm1LVTvYtQNqWdXp7k0oy5hfL0tSmxkpybUgqaid0uZEFNqQ0P2MiFm1AhpiQMZzw9MrM4geVtqRz3lbRQm8bucePvvs2rcDkntBdDr4/ZRV+KOxuxOmblDGbOXkw8uaZ/UmlKJSxqvI9KpTDxScwppbjMzbU/tKeTw1J/G6fSvvffFLE7XFGs38ts1oPYUAg000NqpQosPcXI95PP018ufyTKm9bT3+RRLr/1+eUTT3gqZl945eAda+4EGGmjtBBpooLXTn6IZfFoCGlGggQZaO4EGGmjtBBpooLUTaKCB1k5/imZwEQo0okADDbR2Ag000NoJNNBAa6cO0yq3VfeMaeWH3zjdVv1UmizpGdOWpZUdtadYabL0cR9DWvlxI05PZ5Rv1Uz3FCn/HLW03qGwwGxj3cIObue9Y01pxV3Wme0/GPw+uZw9729KKxySrA7Hc9kjbHGY/cmYdjlLvnF7VPTcfLz43bpHRvsZDA6SrQfzXUvDwj/ANxktfeIuUdH8SEZLDzXJZiSgsQk00FgFGmisAg00Vsn2lgWNe6CBxirQQGMVaKCxCjTQWAUaaKwCDTRWgeYjbQwaaJwCDTRWgQYaq0ADjVWggcaqDtOeQQONU6D5SJuABhqnQAONVaCBxirQQGMVaKCxCjTQWNVhmuybwTtCk30/bLpRwE99md/XmquLJLR0fVdfHlLPalr9yIvTZcn3xs6pRzWt/qWV0/N6bblPPOgNfVcIm2x5VaUx2+7mmqqn/8vuL5vyMquNpa6t/LVQs8tytK39B/Svwuf+x7Cw/pav74lGs2+ZfcvrpnJ+n8T/D0aWWxRdW/A8mgSS9cXTzLuTPkIIIYQQQohh/wD9rERv3xURAgAAAABJRU5ErkJggg==">
+						</span>
+					</figure>
+					<div class="media-content">
+						<div class="content">
+							<p>
+								<strong>@Hatizen</strong> <a>@username</a><br>
+								<span class="has-text-grey">Always ready to learn more<br>
+								<time datetime="2018-04-20">10.03</time> · 2 min read</span>
+							</p>
+						</div>
+					</div>
+				</article>
+				<!-- /.media -->
+
+				<!-- .section -->
+				<div class="section is-paddingless-horizontal">
+					<h1 class="title is-2">
+						How to build a blog quickly
+					</h1>
+					<h2 class="subtitle is-3 has-text-grey-light">
+						Learn basic information about Europe
+					</h2>
+				</div>
+				<!-- /.section -->
+				
+				<!-- .columns -->
+				<figure class="columns is-mobile is-variable is-0 is-marginless">
+					<div class="column">
+						<div class="image card">
+							<a><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Pierre_Auguste_Renoir_-_The_Piazza_San_Marco%2C_Venice_-_Google_Art_Project.jpg/500px-Pierre_Auguste_Renoir_-_The_Piazza_San_Marco%2C_Venice_-_Google_Art_Project.jpg"></a>
+						</div>
+					</div>
+					<div class="column">
+						<div class="image card">
+							<a><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Pierre-Auguste_Renoir_-_Luncheon_of_the_Boating_Party_-_Google_Art_Project.jpg/500px-Pierre-Auguste_Renoir_-_Luncheon_of_the_Boating_Party_-_Google_Art_Project.jpg"></a>
+						</div>
+					</div>
+					<div class="column">
+						<div class="image card">
+							<a><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Pierre-Auguste_Renoir%2C_Le_Moulin_de_la_Galette.jpg/444px-Pierre-Auguste_Renoir%2C_Le_Moulin_de_la_Galette.jpg"></a>
+						</div>
+					</div>
+				</figure>
+				<figcaption class="level">
+					<small class="level-item has-text-grey">
+						Learn more about Europe 
+					</small>
+				</figcaption>
+				<!-- /.columns -->
+
+				<div class="content is-medium">
+					<p>
+						<strong>Europe</strong> is often described as a “peninsula of peninsulas.” A peninsula is a piece of land surrounded by water on three sides. Europe is a peninsula of the Eurasian supercontinent and is bordered by the Arctic Ocean to the north, the Atlantic Ocean to the west, and the Mediterranean, Black, and Caspian seas to the south.
+
+Europe’s main peninsulas are the Iberian, Italian, and Balkan, located in southern Europe, and the Scandinavian and Jutland, located in northern Europe. The link between these peninsulas has made Europe a dominant economic, social, and cultural force throughout recorded history.
+					</p>
+					<p>
+						Today, Europe is home to the citizens of Albania, Andorra, Austria, Belarus, Belgium, Bosnia and Herzegovina, Bulgaria, Croatia, Cyprus, the Czech Republic, Denmark, Estonia, Finland, France, Germany, Greece, Hungary, Iceland, Ireland, Italy, Kosovo, Latvia, Liechtenstein, Lithuania, Luxembourg, Macedonia, Malta, Moldova, Monaco, Montenegro, Netherlands, Norway, Poland, Portugal, Romania, Russia, San Marino, Serbia, Slovakia, Slovenia, Spain, Sweden, Switzerland, Turkey, Ukraine, the United Kingdom (England, Scotland, Wales, and Northern Ireland), and Vatican City.
+					</p>
+				</div>
+
+			</div>
+		</section>
+		<!-- /.section -->
+
+	</body>
+</html>
